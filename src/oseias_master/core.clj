@@ -318,5 +318,4 @@
   (let [port (Integer/parseInt (or (System/getenv "PORT") "3000"))]
     (println (str "Servidor iniciando na porta " port "..."))
     ;; Inicialize o servidor Jetty ou outra lógica aqui
-    (run-jetty (fn [req] {:status 200 :headers {"Content-Type" "text/plain"} :body "Hello, World!"})
-               {:port port :join? false})))
+    (run-jetty app {:port port :join? false})))
