@@ -313,6 +313,10 @@
         (swagger-ui/create-swagger-ui-handler {:url "/swagger.json"}))
     wrap-json-response))
 
-;; Inicializar o servidor
-(defn -main []
-  (run-jetty app {:port 3000 :join? false}))
+(defn -main [& args]
+  ;; Lê a porta da variável de ambiente PORT ou usa 3000 como padrão para desenvolvimento
+  (let [port (Integer/parseInt (or (System/getenv "PORT") "3000"))]
+    (println (str "Servidor iniciando na porta " port "..."))
+    ;; Inicialize o servidor Jetty ou outra lógica aqui
+    (run-jetty (fn [req] {:status 200 :headers {"Content-Type" "text/plain"} :body "Hello, World!"})
+               {:port port :join? false})))
