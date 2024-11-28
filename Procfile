@@ -1,1 +1,1 @@
-web: java $JVM_OPTS -Dserver.port=$PORT -cp target/uberjar/app.jar clojure.main -m oseias-master.core
+web: java -jar "-Dserver.port=$PORT" ".\target\uberjar\app.jar"
