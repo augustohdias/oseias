@@ -11,9 +11,8 @@
                  [ring/ring-json "0.5.1"]]
   :repositories [["central" {:url "https://repo1.maven.org/maven2/"}]
                  ["clojars" {:url "https://repo.clojars.org/"}]]
-  :plugins [[lein-auto "0.1.3"]]
-  :min-lein-version "2.0.0" ;; Garante compatibilidade com Leiningen 2.x
-  :main ^:skip-aot oseias-master.core
+  :min-lein-version "2.0.0"
+  :main ^:skip-aot oseias-master.main
   :target-path "target/%s"
-  :uberjar-name "app.jar" ;; Nome do JAR gerado para deploy no Heroku
+  :uberjar-name "app.jar"
   :profiles {:uberjar {:aot :all}})
