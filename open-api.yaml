@@ -1,0 +1,267 @@
+openapi: 3.1.0
+info:
+  title: Oseias Master API
+  description: API para gerenciar combates e personagens.
+  version: 1.0.0
+servers:
+  - url: https://play.oseiasrpg.org
+    description: Servidor principal da API
+paths:
+  /combate/atacar:
+    post:
+      operationId: atacar
+      summary: Atacar
+      description: Executa checagens para o movimento 'Atacar' e fornece possíveis movimentos subsequentes.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                progresso:
+                  type: integer
+                  description: Progresso no combate contra o inimigo (máx 10).
+                inimigo:
+                  type: object
+                  description: Descrição do inimigo.
+                  properties:
+                    nome:
+                      type: string
+                      description: Nome do inimigo.
+                    classe:
+                      type: string
+                      description: Classe de dificuldade.
+                      enum: [Problemático, Perigoso, Formidável, Extremo, Épico]
+                  required:
+                    - nome
+                    - classe
+                rolagem:
+                  type: object
+                  description: Resultado da rolagem dos dados.
+                  properties:
+                    d6:
+                      type: integer
+                      description: Resultado da rolagem de um dado de 6 lados.
+                    bonus:
+                      type: integer
+                      description: Bônus do atributo escolhido para efetuar o movimento, 0 caso nenhum seja escolhido.
+                    d10a:
+                      type: integer
+                      description: Resultado da rolagem de um dado de 10 lados.
+                    d10b:
+                      type: integer
+                      description: Resultado da rolagem de um dado de 10 lados.
+                  required:
+                    - d6
+                    - d10a
+                    - d10b
+                    - bonus
+              required:
+                - inimigo
+                - rolagem
+                - progresso
+      responses:
+        '200':
+          description: Checagem realizada com sucesso.
+  /combate/confrontar:
+    post:
+      operationId: confrontar
+      summary: Confrontar
+      description: Executa checagens para o movimento 'Confrontar' e fornece possíveis movimentos subsequentes.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                progresso:
+                  type: integer
+                  description: Progresso no combate contra o inimigo (máx 10).
+                inimigo:
+                  type: object
+                  description: Descrição do inimigo.
+                  properties:
+                    nome:
+                      type: string
+                      description: Nome do inimigo.
+                    classe:
+                      type: string
+                      description: Classe de dificuldade.
+                      enum: [Problemático, Perigoso, Formidável, Extremo, Épico]
+                  required:
+                    - nome
+                    - classe
+                rolagem:
+                  type: object
+                  description: Resultado da rolagem dos dados.
+                  properties:
+                    d6:
+                      type: integer
+                      description: Resultado da rolagem de um dado de 6 lados.
+                    bonus:
+                      type: integer
+                      description: Bônus do atributo escolhido para efetuar o movimento, 0 caso nenhum seja escolhido.
+                    d10a:
+                      type: integer
+                      description: Resultado da rolagem de um dado de 10 lados.
+                    d10b:
+                      type: integer
+                      description: Resultado da rolagem de um dado de 10 lados.
+                  required:
+                    - d6
+                    - d10a
+                    - d10b
+                    - bonus
+              required:
+                - inimigo
+                - rolagem
+                - progresso
+      responses:
+        '200':
+          description: Checagem realizada com sucesso.
+  /combate/brigar:
+    post:
+      operationId: brigar
+      summary: Entrar numa Briga
+      description: Executa checagens para o movimento 'Entrar numa Briga' e fornece possíveis movimentos subsequentes.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                inimigo:
+                  type: object
+                  description: Descrição do inimigo.
+                  properties:
+                    nome:
+                      type: string
+                      description: Nome do inimigo.
+                    classe:
+                      type: string
+                      description: Classe de dificuldade.
+                      enum: [Problemático, Perigoso, Formidável, Extremo, Épico]
+                  required:
+                    - nome
+                    - classe
+                rolagem:
+                  type: object
+                  description: Resultado da rolagem dos dados.
+                  properties:
+                    d6:
+                      type: integer
+                      description: Resultado da rolagem de um dado de 6 lados.
+                    bonus:
+                      type: integer
+                      description: Bônus do atributo escolhido para efetuar o movimento, 0 caso nenhum seja escolhido.
+                    d10a:
+                      type: integer
+                      description: Resultado da rolagem de um dado de 10 lados.
+                    d10b:
+                      type: integer
+                      description: Resultado da rolagem de um dado de 10 lados.
+                  required:
+                    - d6
+                    - d10a
+                    - d10b
+                    - bonus
+              required:
+                - inimigo
+                - rolagem
+      responses:
+        '200':
+          description: Checagem realizada com sucesso.
+  /combate/virar-mare:
+    post:
+      operationId: virarMare
+      summary: Virar a Maré
+      description: Executa checagens para o movimento 'Virar a Maré' e determina o próximo movimento possível.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                rolagem:
+                  type: object
+                  description: Resultado da rolagem dos dados.
+                  properties:
+                    d6:
+                      type: integer
+                      description: Resultado da rolagem de um dado de 6 lados.
+                    bonus:
+                      type: integer
+                      description: Bônus do atributo escolhido para efetuar o movimento, 0 caso nenhum seja escolhido.
+                    d10a:
+                      type: integer
+                      description: Resultado da rolagem de um dado de 10 lados.
+                    d10b:
+                      type: integer
+                      description: Resultado da rolagem de um dado de 10 lados.
+                  required:
+                    - d6
+                    - d10a
+                    - d10b
+                    - bonus
+              required:
+                - rolagem
+      responses:
+        '200':
+          description: Checagem realizada com sucesso.
+  /combate/encerrar:
+    post:
+      operationId: encerrar
+      summary: Encerrar Luta
+      description: Executa checagens para o movimento 'Encerrar a Luta' e fornece possíveis movimentos subsequentes.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                inimigo:
+                  type: object
+                  description: Descrição do inimigo.
+                  properties:
+                    nome:
+                      type: string
+                      description: Nome do inimigo.
+                    classe:
+                      type: string
+                      description: Classe de dificuldade.
+                      enum: [Problemático, Perigoso, Formidável, Extremo, Épico]
+                  required:
+                    - nome
+                    - classe
+                progresso:
+                  type: integer
+                  description: Progresso no combate contra o inimigo (máx 10).
+                rolagem:
+                  type: object
+                  description: Resultado da rolagem dos dados.
+                  properties:
+                    bonus:
+                      type: integer
+                      description: Bônus do atributo escolhido para efetuar o movimento, 0 caso nenhum seja escolhido.
+                    d10a:
+                      type: integer
+                      description: Resultado da rolagem de um dado de 10 lados.
+                    d10b:
+                      type: integer
+                      description: Resultado da rolagem de um dado de 10 lados.
+                  required:
+                    - bonus
+                    - d10a
+                    - d10b
+              required:
+                - inimigo
+                - rolagem
+                - progresso
+      responses:
+        '200':
+          description: Checagem realizada com sucesso.

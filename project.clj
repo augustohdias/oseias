@@ -8,7 +8,8 @@
                  [ring/ring-jetty-adapter "1.9.6"]
                  [metosin/reitit "0.5.18"]
                  [metosin/reitit-swagger "0.5.18"]
-                 [ring/ring-json "0.5.1"]]
+                 [ring/ring-json "0.5.1"]
+                 [org.clojure/tools.namespace "1.3.0"]]
   :repositories [["central" {:url "https://repo1.maven.org/maven2/"}]
                  ["clojars" {:url "https://repo.clojars.org/"}]]
   :min-lein-version "2.0.0"

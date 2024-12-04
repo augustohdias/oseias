@@ -17,3 +17,7 @@
       (or (> valor-acao (:d10a rolagem))
           (> valor-acao (:d10b rolagem))) "Sucesso Parcial"
       :else "Falha")))
+
+(defn calcular-resultado [rolagem avaliacao]
+  {:avaliacao avaliacao
+   :critico (= (:d10a rolagem) (:d10b rolagem))})

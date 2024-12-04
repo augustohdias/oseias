@@ -1,0 +1,405 @@
+clj꞉oseias-master.core.service.aventura꞉> 
+#'oseias-master.core.service.aventura/enfrentar-perigo
+clj꞉oseias-master.core.service.aventura꞉> 
+{:personagem {:atributos {:gume 1
+                          :coracao 2
+                          :ferro 2
+                          :sombra 1
+                          :centelha 3}
+              :status {:momentum 2
+                       :saude 5
+                       :espirito 5
+                       :suprimentos 1
+                       :experiencia 0}}
+ :atributo "ferro"}
+{:personagem {:atributos {:gume 1, :coracao 2, :ferro 2, :sombra 1, :centelha 3}, :status {:momentum 2, :saude 5, :espirito 5, :suprimentos 1, :experiencia 0}}, :atributo "ferro"}
+clj꞉oseias-master.core.service.aventura꞉> 
+(enfrentar-perigo {:personagem {:atributos {:gume 1
+                          :coracao 2
+                          :ferro 2
+                          :sombra 1
+                          :centelha 3}
+              :status {:momentum 2
+                       :saude 5
+                       :espirito 5
+                       :suprimentos 1
+                       :experiencia 0}}
+ :atributo "ferro"})
+{:mecanica (), :narrativa "A complexidade em que o personagem se encontra é aprofundada em alguma perda.", :movimentos "Pagar o preço"}
+clj꞉oseias-master.core.service.aventura꞉> 
+(enfrentar-perigo {:personagem {:atributos {:gume 1
+                                            :coracao 2
+                                            :ferro 2
+                                            :sombra 1
+                                            :centelha 3}
+                                :status {:momentum 2
+                                         :saude 5
+                                         :espirito 5
+                                         :suprimentos 1
+                                         :experiencia 0}}
+                   :atributo "ferro"})
+clj꞉oseias-master.core.service.aventura꞉> 
+(enfrentar-perigo {:personagem {:atributos {:gume 1
+                                            :coracao 2
+                                            :ferro 2
+                                            :sombra 1
+                                            :centelha 3}
+                                :status {:momentum 2
+                                         :saude 5
+                                         :espirito 5
+                                         :suprimentos 1
+                                         :experiencia 0}}
+                   :atributo "ferro"})
+{:mecanica ("-1 Momentum" "-1 Saúde" "-1 Espirito" "-1 Suprimento"), :narrativa "A complexidade em que o personagem se encontra é melhor explicada, mas sem ganhos ou perdas.", :movimentos ("Suportar dano" "Suportar estresse")}
+clj꞉oseias-master.core.service.aventura꞉> 
+(enfrentar-perigo {:personagem {:atributos {:gume 1
+                                            :coracao 2
+                                            :ferro 2
+                                            :sombra 1
+                                            :centelha 3}
+                                :status {:momentum 2
+                                         :saude 5
+                                         :espirito 5
+                                         :suprimentos 1
+                                         :experiencia 0}}
+                   :atributo "ferro"})
+{:mecanica ("-1 Momentum" "-1 Saúde" "-1 Espirito" "-1 Suprimento"), :narrativa "A complexidade em que o personagem se encontra é melhor explicada, mas sem ganhos ou perdas.", :movimentos ("Suportar dano" "Suportar estresse")}
+clj꞉oseias-master.core.service.aventura꞉> 
+(enfrentar-perigo {:personagem {:atributos {:gume 1
+                                            :coracao 2
+                                            :ferro 2
+                                            :sombra 1
+                                            :centelha 3}
+                                :status {:momentum 2
+                                         :saude 5
+                                         :espirito 5
+                                         :suprimentos 1
+                                         :experiencia 0}}
+                   :atributo "ferro"})
+{:mecanica (), :narrativa "A complexidade em que o personagem se encontra é aprofundada em alguma perda.", :movimentos "Pagar o preço"}
+clj꞉oseias-master.core.service.aventura꞉> 
+(enfrentar-perigo {:personagem {:atributos {:gume 1
+                                            :coracao 2
+                                            :ferro 2
+                                            :sombra 1
+                                            :centelha 3}
+                                :status {:momentum 2
+                                         :saude 5
+                                         :espirito 5
+                                         :suprimentos 1
+                                         :experiencia 0}}
+                   :atributo "ferro"})
+{:mecanica (), :narrativa "A complexidade em que o personagem se encontra é aprofundada em alguma perda.", :movimentos "Pagar o preço"}
+clj꞉oseias-master.core.service.aventura꞉> 
+(enfrentar-perigo {:personagem {:atributos {:gume 1
+                                            :coracao 2
+                                            :ferro 2
+                                            :sombra 1
+                                            :centelha 3}
+                                :status {:momentum 2
+                                         :saude 5
+                                         :espirito 5
+                                         :suprimentos 1
+                                         :experiencia 0}}
+                   :atributo "ferro"})
+{:mecanica ("-1 Momentum" "-1 Saúde" "-1 Espirito" "-1 Suprimento"), :narrativa "A complexidade em que o personagem se encontra é melhor explicada, mas sem ganhos ou perdas.", :movimentos ("Suportar dano" "Suportar estresse")}
+clj꞉oseias-master.core.service.aventura꞉> 
+#'oseias-master.core.model.efeito/narrativa
+clj꞉oseias-master.core.model.efeito꞉> 
+(enfrentar-perigo {:personagem {:atributos {:gume 1
+                                            :coracao 2
+                                            :ferro 2
+                                            :sombra 1
+                                            :centelha 3}
+                                :status {:momentum 2
+                                         :saude 5
+                                         :espirito 5
+                                         :suprimentos 1
+                                         :experiencia 0}}
+                   :atributo "ferro"})
+; Syntax error compiling at (c:\Users\augus\oseias-master\.calva\output-window\output.calva-repl:109:1).
+; Unable to resolve symbol: enfrentar-perigo in this context
+clj꞉oseias-master.core.model.efeito꞉> 
+#'oseias-master.core.service.aventura/enfrentar-perigo
+clj꞉oseias-master.core.service.aventura꞉> 
+(enfrentar-perigo {:personagem {:atributos {:gume 1
+                                            :coracao 2
+                                            :ferro 2
+                                            :sombra 1
+                                            :centelha 3}
+                                :status {:momentum 2
+                                         :saude 5
+                                         :espirito 5
+                                         :suprimentos 1
+                                         :experiencia 0}}
+                   :atributo "ferro"})
+{:mecanica ("-1 Momentum" "-1 Saúde" "-1 Espirito" "-1 Suprimento"), :narrativa "A complexidade em que o personagem se encontra aprofundada ou a cena atual se complica ligeiramente.", :movimentos ("Suportar dano" "Suportar estresse")}
+clj꞉oseias-master.core.service.aventura꞉> 
+#'oseias-master.core.model.efeito/narrativa
+clj꞉oseias-master.core.model.efeito꞉> 
+#'oseias-master.core.service.aventura/enfrentar-perigo
+clj꞉oseias-master.core.service.aventura꞉> 
+(enfrentar-perigo {:personagem {:atributos {:gume 1
+                                            :coracao 2
+                                            :ferro 2
+                                            :sombra 1
+                                            :centelha 3}
+                                :status {:momentum 2
+                                         :saude 5
+                                         :espirito 5
+                                         :suprimentos 1
+                                         :experiencia 0}}
+                   :atributo "ferro"})
+{:mecanica (), :narrativa "A complexidade em que o personagem se encontra é aprofundada em alguma perda.", :movimentos "Pagar o preço"}
+clj꞉oseias-master.core.service.aventura꞉> 
+(enfrentar-perigo {:personagem {:atributos {:gume 1
+                                            :coracao 2
+                                            :ferro 2
+                                            :sombra 1
+                                            :centelha 3}
+                                :status {:momentum 2
+                                         :saude 5
+                                         :espirito 5
+                                         :suprimentos 1
+                                         :experiencia 0}}
+                   :atributo "ferro"})
+{:mecanica "+1 Momentum", :narrativa "Algo muito bom acontece, que avance com os objetivos de voto do personagem ou que beneficie o personagem permanentemente.", :movimentos ("Garantir uma vantagem" "Reabastecer" "Coletar Informações" "Curar" "Montar Acampamento" "Empreender uma jornada" "Alcançar eu destino")}
+clj꞉oseias-master.core.service.aventura꞉> 
+(enfrentar-perigo {:personagem {:atributos {:gume 1
+                                            :coracao 2
+                                            :ferro 2
+                                            :sombra 1
+                                            :centelha 3}
+                                :status {:momentum 2
+                                         :saude 5
+                                         :espirito 5
+                                         :suprimentos 1
+                                         :experiencia 0}}
+                   :atributo "ferro"})
+{:mecanica "+1 Momentum", :narrativa "Algo muito bom acontece, que avance com os objetivos de voto do personagem ou que beneficie o personagem permanentemente.", :movimentos ("Garantir uma vantagem" "Reabastecer" "Coletar Informações" "Curar" "Montar Acampamento" "Empreender uma jornada" "Alcançar eu destino")}
+clj꞉oseias-master.core.service.aventura꞉> 
+(enfrentar-perigo {:personagem {:atributos {:gume 1
+                                            :coracao 2
+                                            :ferro 2
+                                            :sombra 1
+                                            :centelha 3}
+                                :status {:momentum 2
+                                         :saude 5
+                                         :espirito 5
+                                         :suprimentos 1
+                                         :experiencia 0}}
+                   :atributo "ferro"})
+{:mecanica (), :narrativa "A complexidade em que o personagem se encontra é aprofundada em alguma perda.", :movimentos "Pagar o preço"}
+clj꞉oseias-master.core.service.aventura꞉> 
+#'oseias-master.core.service.aventura/enfrentar-perigo
+clj꞉oseias-master.core.service.aventura꞉> 
+(enfrentar-perigo {:personagem {:atributos {:gume 1
+                                            :coracao 2
+                                            :ferro 2
+                                            :sombra 1
+                                            :centelha 3}
+                                :status {:momentum 2
+                                         :saude 5
+                                         :espirito 5
+                                         :suprimentos 1
+                                         :experiencia 0}}
+                   :atributo "ferro"})
+{:mecanica (), :narrativa "A complexidade em que o personagem se encontra é aprofundada em alguma perda.", :movimentos "Pagar o preço"}
+clj꞉oseias-master.core.service.aventura꞉> 
+(enfrentar-perigo {:personagem {:atributos {:gume 1
+                                            :coracao 2
+                                            :ferro 2
+                                            :sombra 1
+                                            :centelha 3}
+                                :status {:momentum 2
+                                         :saude 5
+                                         :espirito 5
+                                         :suprimentos 1
+                                         :experiencia 0}}
+                   :atributo "ferro"})
+{:mecanica "+1 Momentum", :narrativa "Algo bom acontece, que beneficie o personagem.", :movimentos ("Garantir uma vantagem" "Reabastecer" "Coletar Informações" "Curar" "Montar Acampamento" "Empreender uma jornada" "Alcançar eu destino")}
+clj꞉oseias-master.core.service.aventura꞉> 
+(enfrentar-perigo {:personagem {:atributos {:gume 1
+                                            :coracao 2
+                                            :ferro 2
+                                            :sombra 1
+                                            :centelha 3}
+                                :status {:momentum 2
+                                         :saude 5
+                                         :espirito 5
+                                         :suprimentos 1
+                                         :experiencia 0}}
+                   :atributo "ferro"})
+{:mecanica ("-1 Momentum" "-1 Saúde" "-1 Espirito" "-1 Suprimento"), :narrativa "A complexidade em que o personagem se encontra se aprofunda ou a cena atual se complica ligeiramente.", :movimentos ("Suportar dano" "Suportar estresse")}
+clj꞉oseias-master.core.service.aventura꞉> 
+(enfrentar-perigo {:personagem {:atributos {:gume 1
+                                            :coracao 2
+                                            :ferro 2
+                                            :sombra 1
+                                            :centelha 3}
+                                :status {:momentum 2
+                                         :saude 5
+                                         :espirito 5
+                                         :suprimentos 1
+                                         :experiencia 0}}
+                   :atributo "ferro"})
+{:mecanica (), :narrativa "A complexidade em que o personagem se encontra é aprofundada em alguma perda.", :movimentos "Pagar o preço"}
+clj꞉oseias-master.core.service.aventura꞉> 
+(enfrentar-perigo {:personagem {:atributos {:gume 1
+                                            :coracao 2
+                                            :ferro 2
+                                            :sombra 1
+                                            :centelha 3}
+                                :status {:momentum 2
+                                         :saude 5
+                                         :espirito 5
+                                         :suprimentos 1
+                                         :experiencia 0}}
+                   :atributo "ferro"})
+{:mecanica (), :narrativa "A complexidade em que o personagem se encontra é aprofundada em alguma perda.", :movimentos "Pagar o preço"}
+clj꞉oseias-master.core.service.aventura꞉> 
+(enfrentar-perigo {:personagem {:atributos {:gume 1
+                                            :coracao 2
+                                            :ferro 2
+                                            :sombra 1
+                                            :centelha 3}
+                                :status {:momentum 2
+                                         :saude 5
+                                         :espirito 5
+                                         :suprimentos 1
+                                         :experiencia 0}}
+                   :atributo "ferro"})
+{:mecanica (), :narrativa "A complexidade em que o personagem se encontra é aprofundada em alguma perda.", :movimentos "Pagar o preço"}
+clj꞉oseias-master.core.service.aventura꞉> 
+                   :atributo "ferro"})
+
+(enfrentar-perigo {:personagem {:atributos {:gume 1
+                                            :coracao 2
+                                            :ferro 2
+                                            :sombra 1
+                                            :centelha 3}
+                                :status {:momentum 2
+                                         :saude 5
+                                         :espirito 5
+                                         :suprimentos 1
+                                         :experiencia 0}}
+                   :atributo "ferro"})
+{:mecanica ("-1 Momentum" "-1 Saúde" "-1 Espirito" "-1 Suprimento"), :narrativa "A complexidade em que o personagem se encontra se aprofunda ou a cena atual se complica ligeiramente.", :movimentos ("Suportar dano" "Suportar estresse")}
+clj꞉oseias-master.core.service.aventura꞉> 
+(enfrentar-perigo {:personagem {:atributos {:gume 1
+                                            :coracao 2
+                                            :ferro 2
+                                            :sombra 1
+                                            :centelha 3}
+                                :status {:momentum 2
+                                         :saude 5
+                                         :espirito 5
+                                         :suprimentos 1
+                                         :experiencia 0}}
+                   :atributo "ferro"})
+{:mecanica ("-1 Momentum" "-1 Saúde" "-1 Espirito" "-1 Suprimento"), :narrativa "A complexidade em que o personagem se encontra se aprofunda ou a cena atual se complica ligeiramente.", :movimentos ("Suportar dano" "Suportar estresse")}
+clj꞉oseias-master.core.service.aventura꞉> 
+(enfrentar-perigo {:personagem {:atributos {:gume 1
+                                            :coracao 2
+                                            :ferro 2
+                                            :sombra 1
+                                            :centelha 3}
+                                :status {:momentum 2
+                                         :saude 5
+                                         :espirito 5
+                                         :suprimentos 1
+                                         :experiencia 0}}
+                   :atributo "ferro"})
+{:mecanica (), :narrativa "A complexidade em que o personagem se encontra é aprofundada em alguma perda.", :movimentos "Pagar o preço"}
+clj꞉oseias-master.core.service.aventura꞉> 
+(enfrentar-perigo {:personagem {:atributos {:gume 1
+                                            :coracao 2
+                                            :ferro 2
+                                            :sombra 1
+                                            :centelha 3}
+                                :status {:momentum 2
+                                         :saude 5
+                                         :espirito 5
+                                         :suprimentos 1
+                                         :experiencia 0}}
+                   :atributo "ferro"})
+{:mecanica ("-1 Momentum" "-1 Saúde" "-1 Espirito" "-1 Suprimento"), :narrativa "A complexidade em que o personagem se encontra se aprofunda ou a cena atual se complica ligeiramente.", :movimentos ("Suportar dano" "Suportar estresse")}
+clj꞉oseias-master.core.service.aventura꞉> 
+(enfrentar-perigo {:personagem {:atributos {:gume 1
+                                            :coracao 2
+                                            :ferro 2
+                                            :sombra 1
+                                            :centelha 3}
+                                :status {:momentum 2
+                                         :saude 5
+                                         :espirito 5
+                                         :suprimentos 1
+                                         :experiencia 0}}
+                   :atributo "ferro"})
+{:mecanica ("-1 Momentum" "-1 Saúde" "-1 Espirito" "-1 Suprimento"), :narrativa "A complexidade em que o personagem se encontra se aprofunda ou a cena atual se complica ligeiramente.", :movimentos ("Suportar dano" "Suportar estresse")}
+clj꞉oseias-master.core.service.aventura꞉> 
+(enfrentar-perigo {:personagem {:atributos {:gume 1
+                                            :coracao 2
+                                            :ferro 2
+                                            :sombra 1
+                                            :centelha 3}
+                                :status {:momentum 2
+                                         :saude 5
+                                         :espirito 5
+                                         :suprimentos 1
+                                         :experiencia 0}}
+                   :atributo "ferro"})
+{:mecanica (), :narrativa "A complexidade em que o personagem se encontra é aprofundada em alguma perda.", :movimentos "Pagar o preço"}
+clj꞉oseias-master.core.service.aventura꞉> 
+(enfrentar-perigo {:personagem {:atributos {:gume 1
+                                            :coracao 2
+                                            :ferro 2
+                                            :sombra 1
+                                            :centelha 3}
+                                :status {:momentum 2
+                                         :saude 5
+                                         :espirito 5
+                                         :suprimentos 1
+                                         :experiencia 0}}
+                   :atributo "ferro"})
+{:mecanica ("-1 Momentum" "-1 Saúde" "-1 Espirito" "-1 Suprimento"), :narrativa "A complexidade em que o personagem se encontra se aprofunda ou a cena atual se complica ligeiramente.", :movimentos ("Suportar dano" "Suportar estresse")}
+clj꞉oseias-master.core.service.aventura꞉> 
+(enfrentar-perigo {:personagem {:atributos {:gume 1
+                                            :coracao 2
+                                            :ferro 2
+                                            :sombra 1
+                                            :centelha 3}
+                                :status {:momentum 2
+                                         :saude 5
+                                         :espirito 5
+                                         :suprimentos 1
+                                         :experiencia 0}}
+                   :atributo "ferro"})
+{:mecanica (), :narrativa "A complexidade em que o personagem se encontra é aprofundada em alguma perda.", :movimentos "Pagar o preço"}
+clj꞉oseias-master.core.service.aventura꞉> 
+(enfrentar-perigo {:personagem {:atributos {:gume 1
+                                            :coracao 2
+                                            :ferro 2
+                                            :sombra 1
+                                            :centelha 3}
+                                :status {:momentum 2
+                                         :saude 5
+                                         :espirito 5
+                                         :suprimentos 1
+                                         :experiencia 0}}
+                   :atributo "ferro"})
+{:mecanica (), :narrativa "A complexidade em que o personagem se encontra é aprofundada em alguma perda.", :movimentos "Pagar o preço"}
+clj꞉oseias-master.core.service.aventura꞉> 
+(enfrentar-perigo {:personagem {:atributos {:gume 1
+                                            :coracao 2
+                                            :ferro 2
+                                            :sombra 1
+                                            :centelha 3}
+                                :status {:momentum 2
+                                         :saude 5
+                                         :espirito 5
+                                         :suprimentos 1
+                                         :experiencia 0}}
+                   :atributo "ferro"})
+{:mecanica "+1 Momentum", :narrativa "Algo bom acontece, que beneficie o personagem.", :movimentos ("Garantir uma vantagem" "Reabastecer" "Coletar Informações" "Curar" "Montar Acampamento" "Empreender uma jornada" "Alcançar eu destino")}
+clj꞉oseias-master.core.service.aventura꞉> 
