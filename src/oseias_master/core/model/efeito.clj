@@ -1,16 +1,17 @@
 (ns oseias-master.core.model.efeito)
 
-(defn efeito [mecanica narrativa movimentos]
-  {:mecanica   mecanica
+(defn efeito [mecanica escolha narrativa movimentos]
+  {:mecanica   {:efeito mecanica :escolha escolha}
    :narrativa  narrativa
    :movimentos movimentos})
 
 (defn mecanica [args] (let [[tipo qtd] args
-                            qtdstr (if (> qtd 0) (str "+" qtd) (str qtd))
-                            mecanicas {:momentum    (str qtdstr " Momentum")
-                                       :saude       (str qtdstr " Saúde")
-                                       :espirito    (str qtdstr " Espirito")
-                                       :suprimentos (str qtdstr " Suprimento")}] (mecanicas (keyword tipo))))
+                            qtdstr     (if (> qtd 0) (str "+" qtd) (str qtd))
+                            mecanicas  {:momentum      (str qtdstr " Momentum")
+                                        :saude         (str qtdstr " Saúde")
+                                        :espirito      (str qtdstr " Espirito")
+                                        :bonus-rolagem (str qtdstr " Rolagem")
+                                        :suprimentos   (str qtdstr " Suprimento")}] (mecanicas (keyword tipo))))
 
 (def narrativa {:sucesso-critico "Algo muito bom acontece, que avance com os objetivos de voto do personagem ou que beneficie o personagem permanentemente."
                 :sucesso-decisivo    "Algo bom acontece, que beneficie o personagem."

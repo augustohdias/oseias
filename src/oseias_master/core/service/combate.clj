@@ -1,6 +1,6 @@
 (ns oseias-master.core.service.combate
   (:require [clojure.string :as str]
-            [oseias-master.core.service.avaliacoes :refer [avaliar-rolagem avaliar-progresso calcular-resultado]]))
+            [oseias-master.core.model.avaliacoes :refer [avaliar-rolagem avaliar-progresso calcular-resultado]]))
 
 (defn- avancos-por-dano [classe]
   (get {:Problemático 12
